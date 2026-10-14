@@ -14,7 +14,8 @@ from google.genai import types
 
 client = genai.Client()
 
-MODEL = "gemini-2.5-flash"
+import os
+MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
 
 SYSTEM_INSTRUCTION = (
     "Bạn là trợ lý thời tiết thân thiện, trả lời bằng tiếng Việt tự nhiên. "

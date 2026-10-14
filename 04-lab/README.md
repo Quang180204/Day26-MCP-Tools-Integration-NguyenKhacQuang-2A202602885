@@ -88,3 +88,22 @@ Open http://localhost:8000 in your browser, select `weather_agent`, and ask abou
 | `GOOGLE_API_KEY` | mcp-client/.env | Gemini API key |
 | `PORT` | mcp-server (env) | Override server port (default: 8085) |
 | `MCP_SERVER_URL` | mcp-client/.env | MCP endpoint the agent connects to (default: `http://localhost:8085/mcp`; set to your Cloud Run URL + `/mcp` when deployed) |
+
+---
+
+## Minh Chứng Nghiệm Thu (Screenshots)
+
+Tất cả 9 ảnh chụp minh chứng bắt buộc đã được lưu đầy đủ tại thư mục `screenshots/` theo đúng chuẩn:
+
+| File ảnh trong `screenshots/` | Nội dung kiểm thử |
+| :--- | :--- |
+| `01-function-calling.png` | Function calling thuần túy với Google Gemini SDK |
+| `02-mcp-client.png` | MCP Client & Server giao tiếp qua stdio transport |
+| `03a-auth-ok.png` | Xác thực Bearer Token hợp lệ thành công qua HTTP |
+| `03a-auth-fail.png` | Từ chối truy cập 401 Unauthorized khi Bearer Token sai |
+| `03b-registry.png` | Tra cứu và chọn tool động qua Tool Registry |
+| `03c-versioning.png` | Quản lý phiên bản tương thích ngược (v1 + v2 song song) |
+| `04-verify-setup.png` | Kịch bản verify_setup.py kiểm tra đạt 100% các thành phần |
+| `04-adk-current.png` | ADK Web UI gọi `get_current_weather` lấy dữ liệu thời tiết hiện tại |
+| `04-adk-forecast.png` | ADK Web UI gọi `get_forecast` lấy dữ liệu dự báo thời tiết 3 ngày |
+
